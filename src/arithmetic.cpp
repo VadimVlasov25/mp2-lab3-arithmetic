@@ -370,18 +370,18 @@ double Tlexeme::Calculation(int x)
         if (priority[i] == 3) // Если это переменная
         {
             int w = 0, f = -1;
-            while ((w < j) && (f == -1))
-            {
-                if (M2[j] == mLexeme[i]) { f = i; S1.Push(f); } w++;
-            }
-            if (f == -1) // Если переменная не найдена
-            {
-                double q;
-                cout << "\tEnter the value of the variable " << mLexeme[i] << ":\n\t"; // Запрашиваем значение переменной
-                if (x == 0) { cin >> q; } // Если x равно 0, запрашиваем у пользователя
-                else { q = x; } // Иначе используем заданное значение
-                S1.Push(q); M1[j] = q; M2[j] = mLexeme[i]; // Сохраняем значение переменной
-            }
+         //   //while ((w < j) && (f == -1))
+         //   //{
+         //       if (M2[j] == mLexeme[i]) { f = i; S1.Push(f); } w++;
+         //   }
+         //   if (f == -1) // Если переменная не найдена
+         //   {
+         //       double q;
+         //       cout << "\tEnter the value of the variable " << mLexeme[i] << ":\n\t"; // Запрашиваем значение переменной
+         //       if (x == 0) { cin >> q; } // Если x равно 0, запрашиваем у пользователя
+         //       else { q = x; } // Иначе используем заданное значение
+         //       S1.Push(q); M1[j] = q; M2[j] = mLexeme[i]; // Сохраняем значение переменной
+         ////   }
         }
         if (priority[i] == 1) // Если это операция
         {

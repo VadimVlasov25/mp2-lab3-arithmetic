@@ -12,6 +12,22 @@ void menu()
     cout << "\n\t1. Проверка выражения на корректность \n\t2. Перевод выражения в польскую нотацию \n\t3. Вычисление выражения \n\t0. Ввести новое выражение\n\tВвод:";
 }
 
+
+int main2() {
+    Table* t , *t1= new TableArray[10], *t2 = new RBT, *t3 = new HashT; 
+    Polynom x, y, w;
+    t->Insert("a", x);
+    t->Insert("b", y);
+    t->Insert("c", w);
+    string exp = "a+b*c";
+    cin >> exp;
+    Tlexeme A;
+    // выбрать тип таблицы
+    t = &t2;
+    Polynom z = A.Calculation(t);
+    t->Insert("d", z);
+}
+
 int main()
 {
     setlocale(LC_ALL, "rus");
