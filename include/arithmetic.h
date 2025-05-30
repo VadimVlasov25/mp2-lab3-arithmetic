@@ -24,7 +24,7 @@ public:
     int Check_correct(); // Проверяет корректность введенного выражения
     string Pol(); // Возвращает выражение в польской нотации
     double Calculation(int x = 0); // Вычисляет значение выражения
-
+     
     // Перегрузка операторов ввода/вывода
     friend istream& operator>>(istream& in, Tlexeme& l)
     {
