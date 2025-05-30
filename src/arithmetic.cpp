@@ -3,7 +3,7 @@
 #include "..\include\stack.h"
 #include <cmath>   // Для математических функций
 #include <cstdlib> // Для конвертации строк в числа
-
+ 
 // Функция для определения приоритета операций
 int PR(string a)
 {
